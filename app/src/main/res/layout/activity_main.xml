@@ -9,11 +9,26 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="es.cice.dialogtest.MainActivity">
+    <TextView
+        android:id="@+id/monitor"
+        android:text="hola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <Button
+        android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Positive Negative Dialog"
         android:onClick="showPositiveNegativeDialog"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Positive Custom Dialog"
+        android:onClick="showCustomLayoutDialog"
         android:layout_centerInParent="true"/>
 </RelativeLayout>
